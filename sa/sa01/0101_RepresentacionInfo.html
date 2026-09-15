@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/gines-lopez/PRSI2/sa/sa01/0101_Elementos-del-ordenador-y-simuladores.html">
+        <link rel="canonical" href="https://github.com/gines-lopez/PRSI2/sa/sa01/0101_RepresentacionInfo.html">
       
       
         <link rel="prev" href="ResumenSA.html">
       
+      
+        <link rel="next" href="0102_ArquitecturaPC.html">
       
       
         
@@ -23,7 +25,7 @@
     
     
       
-        <title>Elementos del ordenador y simuladores - Programación, Redes y Sistemas Informáticos 2</title>
+        <title>Representación de la información - Programación, Redes y Sistemas Informáticos 2</title>
       
     
     
@@ -52,6 +54,8 @@
       <link rel="stylesheet" href="../../css/extra_index.css">
     
       <link rel="stylesheet" href="../../css/extra_pd.css">
+    
+      <link rel="stylesheet" href="../../css/extra_general.css">
     
       <link rel="stylesheet" href="../../css/extra_tablasresumen.css">
     
@@ -124,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Elementos del ordenador y simuladores
+              Representación de la información
             
           </span>
         </div>
@@ -282,6 +286,8 @@
       
         
       
+        
+      
     
     
     
@@ -373,7 +379,7 @@
   <span class="md-ellipsis">
     
   
-    Elementos del ordenador y simuladores
+    Representación de la información
   
 
     
@@ -384,14 +390,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="0101_Elementos-del-ordenador-y-simuladores.html" class="md-nav__link md-nav__link--active">
+      <a href="0101_RepresentacionInfo.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Elementos del ordenador y simuladores
+    Representación de la información
   
 
     
@@ -492,6 +498,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0102_ArquitecturaPC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitectura de un computador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -858,85 +892,6 @@ Así que 288 = 256 + 32 = 2⁸ + 2⁵. Colocamos un 1 en las posiciones 8 y 5, y
 </span></code></pre></div></li>
 </ol>
 </div>
-<!--#### 1.3. Arquitectura von Neumann
-
-- Bloques: **UCP** (unidad de control + ALU + registros), **memoria principal**, **unidades de E/S** y **buses** (datos, direcciones, control).
-- **Ciclo de instrucción**: búsqueda (*fetch*) → decodificación → ejecución → almacenamiento.
-- **Cuello de botella de von Neumann** y cómo se mitiga: memoria caché, segmentación (*pipeline*), ejecución especulativa, multinúcleo.
-- **Jerarquía de memoria**: registros → caché L1/L2/L3 → RAM → almacenamiento secundario → almacenamiento en red. A más cerca de la CPU, más rápida, más cara y menor capacidad.
-
-### S2. Componentes físicos y sus características
-
-#### 2.1. Procesador (CPU)
-
-- **Núcleos** e **hilos** (SMT/Hyper-Threading); núcleos de rendimiento y de eficiencia.
-- **Frecuencia** base y turbo; **IPC**: por qué más GHz no implica más rendimiento entre arquitecturas distintas.
-- **Caché** L1/L2/L3. **Litografía** (nm). **TDP** y disipación.
-- **Socket** y compatibilidad con la placa (p. ej. AM5, LGA1700/1851): el socket condiciona la placa, y el chipset condiciona las funciones disponibles.
-- Arquitecturas: x86-64 frente a **ARM** (eficiencia, portátiles y SBC tipo Raspberry Pi).
-
-#### 2.2. Memoria RAM
-
-- Volátil. Tecnologías **DDR4 / DDR5**, formatos DIMM y SO-DIMM.
-- **Frecuencia efectiva** (MT/s), **latencias** (CL) y perfiles XMP/EXPO.
-- **Dual channel**: instalar 2×8 GB en los bancos correctos rinde más que 1×16 GB.
-- ECC y su uso en servidores.
-
-#### 2.3. Placa base
-
-- Formatos **ATX / microATX / mini-ITX** y su relación con la caja.
-- **Chipset**, VRM, BIOS/**UEFI**, batería CMOS, POST.
-- Buses y conectores: **PCIe** (versiones y número de líneas ×1/×4/×8/×16), **M.2** (NVMe frente a SATA), SATA, USB (nomenclatura y velocidades), conectores de alimentación 24 pines y EPS.
-
-#### 2.4. Almacenamiento
-
-- **HDD**: platos, cabezales, RPM, latencia mecánica.
-- **SSD SATA** (límite ~550 MB/s) frente a **SSD NVMe** (PCIe, miles de MB/s). TBW y vida útil.
-- Métricas: secuencial frente a aleatorio, **IOPS**, latencia.
-- Idea de **RAID** 0/1/5 como introducción a la UD de servicios en red.
-
-#### 2.5. Gráfica, alimentación y refrigeración
-
-- **GPU** integrada frente a dedicada; VRAM; uso en cómputo paralelo (CUDA/OpenCL, IA).
-- **Fuente de alimentación**: cálculo de potencia con margen, certificación 80 PLUS, protecciones. Es el componente donde no conviene ahorrar.
-- **Refrigeración**: disipación por aire frente a líquida, pasta térmica, flujo de aire de la caja, curvas de ventilador, *throttling* térmico.
-
-#### 2.6. Interacción entre componentes y rendimiento
-
-- Concepto de **cuello de botella**: el sistema rinde según su componente más limitante para esa carga concreta.
-- Perfiles de carga: ofimática, desarrollo, virtualización (RAM y núcleos), edición de vídeo (GPU y E/S), servidor (fiabilidad y E/S).
-
-### S3. Selección de componentes, simuladores y sostenibilidad
-
-#### 3.1. Criterios de selección
-
-1. Definir el **uso real** y el **presupuesto** antes de mirar componentes.
-2. Comprobar **compatibilidades**: socket ↔ placa, tipo de RAM ↔ placa, tamaño de placa ↔ caja, longitud de GPU ↔ caja, potencia y conectores de la fuente, altura del disipador.
-3. Equilibrar el conjunto: evitar una GPU de gama alta con una CPU muy limitada, o 32 GB de RAM en un equipo de ofimática.
-4. Prever **ampliación futura**: bancos de RAM libres, ranuras M.2 y SATA disponibles, margen en la fuente.
-5. Contrastar fuentes: fichas técnicas del fabricante frente a análisis independientes y comparativas (**CE 5.1**).
-
-#### 3.2. Simuladores y herramientas
-
-| Herramienta | Uso | Dónde |
-|---|---|---|
-| Configuradores web (PCPartPicker, tiendas) | Presupuestar y validar compatibilidades | Navegador |
-| PC Building Simulator / vídeos de montaje guiado | Secuencia de montaje sin riesgo | Navegador / equipo |
-| Logisim Evolution | Simular circuitos lógicos: puertas, sumador, registro | `apt install logisim-evolution` o `.jar` |
-| CPU-X | Equivalente libre a CPU-Z: CPU, caché, RAM, placa | LliureX |
-| `inxi -Fxz`, `lshw`, `lscpu`, `lsblk`, `dmidecode` | Inventario real por consola | LliureX (se amplía en 6.3) |
-| Monitor del sistema de Plasma | Vista gráfica de recursos | LliureX (se amplía en 6.4) |
-
-#### 3.3. Bienestar digital, salud y sostenibilidad (CE 5.3, 5.4)
-
-- **Consumo energético** del equipo y del aula; modos de ahorro; apagado frente a suspensión.
-- **Obsolescencia programada** y percibida; alargar la vida útil mediante ampliación de RAM o SSD; instalar una distribución ligera en equipos antiguos.
-- **RAEE**: residuos de aparatos eléctricos y electrónicos, puntos limpios, reciclaje y reutilización.
-- **Minerales en conflicto** y condiciones de fabricación: dimensión ética de la compra de hardware.
-- **Ergonomía**: altura de pantalla, distancia visual, iluminación difusa lateral, pausas y descanso visual (regla 20-20-20).
-
------>
-
 <h2 id="activicades">Activicades<a class="headerlink" href="#activicades" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -957,15 +912,6 @@ Así que 288 = 256 + 32 = 2⁸ + 2⁵. Colocamos un 1 en las posiciones 8 y 5, y
 <!--
 ### Sesión 2
 
-8. **[E]** Ficha comparativa de dos CPU actuales (una de gama de entrada y otra de gama media). Columnas: núcleos/hilos, frecuencia base y turbo, caché L3, TDP, socket, gráfica integrada, precio. Concluye cuál elegirías para un aula de informática y por qué.
-9. **[E]** Interpreta esta especificación: `DDR5-6000 CL30 2×16 GB`. ¿Qué significa cada dato? ¿Por qué son dos módulos y no uno de 32 GB?
-10. **[E]** Ordena de mayor a menor velocidad y justifica el orden: registro de CPU, caché L2, RAM DDR5, SSD NVMe, SSD SATA, HDD 7200 rpm, almacenamiento en la nube.
-11. **[E]** Una placa tiene una ranura `PCIe 4.0 x16` y dos `M.2 (una PCIe 4.0 x4, otra SATA)`. Explica qué pasaría al instalar un SSD NVMe en la ranura M.2 SATA.
-12. **[P]** Detecta el **cuello de botella** en tres escenarios y justifica la respuesta con datos:
-    - a) Equipo con i7 reciente, 8 GB de RAM y HDD, usado para virtualizar 3 máquinas.
-    - b) Equipo con GPU de gama alta y CPU de hace 10 años, usado para edición de vídeo.
-    - c) Servidor web con CPU potente, 64 GB de RAM y un único HDD de 5400 rpm.
-13. **[E]** Calcula la potencia recomendada de fuente para un equipo con CPU de 125 W de TDP, GPU de 200 W, 2 SSD NVMe, 4 ventiladores y una placa ATX. Aplica un margen razonable y justifícalo.
 
 ### Sesión 3
 
@@ -1053,6 +999,22 @@ Así que 288 = 256 + 32 = 2⁸ + 2⁵. Colocamos un 1 en las posiciones 8 y 5, y
             </div>
           </a>
         
+        
+          
+          <a href="0102_ArquitecturaPC.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Arquitectura de un computador">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Arquitectura de un computador
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
