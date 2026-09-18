@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://github.com/gines-lopez/PRSI2/sa/sa01/0101_RepresentacionInfo.html">
+        <link rel="canonical" href="https://github.com/gines-lopez/PRSI2/sa/sa01/0104_Monitorizacion.html">
       
       
-        <link rel="prev" href="ResumenSA.html">
-      
-      
-        <link rel="next" href="0102_ArquitecturaPC.html">
       
       
         
@@ -25,7 +21,7 @@
     
     
       
-        <title>Representación de la información - Programación, Redes y Sistemas Informáticos 2</title>
+        <title>Monitorización - Programación, Redes y Sistemas Informáticos 2</title>
       
     
     
@@ -93,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#elementos-de-un-ordenador-simuladores-hardware" class="md-skip">
+        <a href="#monitorizacion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -128,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Representación de la información
+              Monitorización
             
           </span>
         </div>
@@ -275,10 +271,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -292,11 +286,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -317,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -360,37 +354,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Representación de la información
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="0101_RepresentacionInfo.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="0101_RepresentacionInfo.html" class="md-nav__link">
         
   
   
@@ -406,87 +373,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#representacion-de-la-informacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Representación de la información
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Representación de la información">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unidades-de-medida" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unidades de medida
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sistemas-de-representacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sistemas de representación
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprobacion-por-sumas-de-potencias-de-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Comprobación por sumas de potencias de 2
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activicades" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Activicades
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -544,360 +430,133 @@
 
 
 
-<h1 id="elementos-de-un-ordenador-simuladores-hardware">Elementos de un ordenador. Simuladores hardware<a class="headerlink" href="#elementos-de-un-ordenador-simuladores-hardware" title="Permanent link">&para;</a></h1>
-<!--## Ubicación en la programación
-
-| Elemento | Referencia |
-|---|---|
-| Competencias específicas | CE2, CE5 |
-| Criterios de evaluación | 2.1, 2.2, 5.1, 5.3, 5.4 |
-| Saberes básicos | Bloque 2: arquitectura y diseño de un ordenador; criterios de selección de componentes; montaje; simuladores de hardware; interacción de componentes, prestaciones y rendimiento; implicaciones sobre bienestar digital, salud y sostenibilidad |
-| Instrumentos | Prácticas en clase, relación de ejercicios en Aules |
-
-<!--## Reparto de sesiones
-
-| Sesión | Contenido | Criterios |
-|---|---|---|
-| S1 | Representación de la información y unidades de medida. Arquitectura von Neumann | 2.1 |
-| S2 | Componentes: CPU, RAM, placa base, almacenamiento, GPU, alimentación | 2.2 |
-| S3 | Criterios de selección, presupuestos y simuladores de montaje. Inventario real del equipo | 2.2, 5.1, 5.3, 5.4 |
-
----
-
-## Teoría-->
-
-<h2 id="representacion-de-la-informacion">Representación de la información<a class="headerlink" href="#representacion-de-la-informacion" title="Permanent link">&para;</a></h2>
-<h3 id="unidades-de-medida">Unidades de medida<a class="headerlink" href="#unidades-de-medida" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Bit</strong> (unidad mínima, 0/1) y <strong>byte</strong> (8 bits). </li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">A tener en cuenta</p>
-<p>Distinción entre <strong>b</strong> (bit) y <strong>B</strong> (byte): una conexión de 600 Mb/s no descarga 600 MB/s, sino unos 75 MB/s.</p>
-</div>
-<ul>
-<li><strong>Prefijos decimales (SI)</strong> frente a <strong>prefijos binarios (IEC)</strong>. Es la razón por la que un disco de 1 TB aparece en el sistema como ~931 GiB.</li>
-</ul>
+<h1 id="monitorizacion">Monitorización<a class="headerlink" href="#monitorizacion" title="Permanent link">&para;</a></h1>
+<h2 id="para-que-se-monitoriza">Para qué se monitoriza<a class="headerlink" href="#para-que-se-monitoriza" title="Permanent link">&para;</a></h2>
+<p>Monitorizar es <strong>mirar cómo está funcionando un sistema</strong> para responder a cuatro preguntas:</p>
 <table>
 <thead>
 <tr>
-<th>Decimal (SI)</th>
-<th>Valor</th>
-<th>Binario (IEC)</th>
-<th>Valor</th>
+<th>Pregunta</th>
+<th>Ejemplo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>kB</td>
-<td>10³</td>
-<td>KiB</td>
-<td>2¹⁰ = 1024</td>
+<td>¿Por qué va lento?</td>
+<td>Un proceso se ha quedado acaparando la CPU</td>
 </tr>
 <tr>
-<td>MB</td>
-<td>10⁶</td>
-<td>MiB</td>
-<td>2²⁰</td>
+<td>¿Cuánto me queda?</td>
+<td>El disco está al 92 %, hay que actuar antes de que se llene</td>
 </tr>
 <tr>
-<td>GB</td>
-<td>10⁹</td>
-<td>GiB</td>
-<td>2³⁰</td>
+<td>¿Está funcionando?</td>
+<td>El servidor web ha dejado de responder</td>
 </tr>
 <tr>
-<td>TB</td>
-<td>10¹²</td>
-<td>TiB</td>
-<td>2⁴⁰</td>
+<td>¿Está pasando algo raro?</td>
+<td>400 intentos fallidos de acceso por SSH esta noche</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Otras magnitudes del sistema: frecuencia (MHz/GHz), ancho de banda (MB/s, GB/s), latencia (ns, ms), IOPS, potencia (W), temperatura (°C).</li>
-</ul>
-<h3 id="sistemas-de-representacion">Sistemas de representación<a class="headerlink" href="#sistemas-de-representacion" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Sistemas de numeración</strong>: binario, octal, decimal, hexadecimal. Conversiones entre bases y agrupación binario ↔ hexadecimal (4 bits = 1 dígito hex). Si queréis profundizar, tenéis este <a href="extra_sistemas.html">apartado</a>.</li>
-<li><strong>Enteros con signo</strong>: signo-magnitud y <strong>complemento a 2</strong>. Rango representable con <em>n</em> bits. Desbordamiento.</li>
-<li><strong>Reales</strong>: introducción a la <strong>coma flotante IEEE 754</strong> (signo, exponente, mantisa) y a los errores de redondeo (<code>0.1 + 0.2 != 0.3</code>).</li>
-<li><strong>Caracteres</strong>: ASCII, ISO-8859-15 y <strong>Unicode/UTF-8</strong>. Por qué UTF-8 es el estándar actual y de dónde salen los "caracteres raros" al abrir un fichero con la codificación equivocada.</li>
-<li><strong>Multimedia</strong>: muestreo, profundidad de bits, resolución; compresión con y sin pérdida.</li>
-</ul>
-<p>En <a href="https://www.youtube.com/playlist?list=PLiWRH3aE37VK_bTTfZ_h4q0D8DMy_MwRz">esta playlist</a> tienes como podemos pasar de un sistema de represnación a otro.</p>
-<div class="admonition info">
-<p class="admonition-title">Conversión del número 288 a binario y hexadecimal?</p>
+<p>La diferencia entre un usuario y un administrador está en <strong>cuándo</strong> se mira: el usuario mira cuando ya ha fallado; el administrador vigila para que no falle.</p>
+<h3 id="que-se-mide-y-como-se-interpreta">Qué se mide y cómo se interpreta<a class="headerlink" href="#que-se-mide-y-como-se-interpreta" title="Permanent link">&para;</a></h3>
+<p><strong>CPU.</strong> Porcentaje de uso, y sobre todo el reparto: <code>us</code> (programas del usuario), <code>sy</code> (sistema) y <strong><code>wa</code></strong> (esperando al disco). Si <code>wa</code> está alto, el problema <strong>no es la CPU, es el disco</strong>.</p>
+<p><strong>Carga media (load average).</strong> Los tres números que muestra <code>uptime</code> son la carga de 1, 5 y 15 minutos. Se interpretan comparándolos con el número de núcleos: una carga de 4,0 en un equipo de 4 núcleos significa saturación; en uno de 16, holgura. Los tres juntos indican si el problema es puntual o va a más.</p>
+<p><strong>Memoria.</strong> En Linux, ver poca memoria «libre» <strong>no es un problema</strong>: el sistema aprovecha la RAM sobrante como caché y la suelta cuando hace falta. La columna que importa es <strong><code>available</code></strong>. La señal de alarma real es que el sistema esté usando <strong>swap</strong> de forma continuada.</p>
+<p><strong>Disco.</strong> Dos cosas distintas: el <strong>espacio</strong> (<code>df -h</code>) y los <strong>inodos</strong> (<code>df -i</code>). Un disco puede dar «espacio insuficiente» teniendo gigas libres si se han agotado los inodos por acumular miles de ficheros diminutos.</p>
+<p><strong>Red.</strong> Qué puertos están abiertos y quién está conectado (<code>ss -tulpn</code>).</p>
+<h3 id="herramientas">Herramientas<a class="headerlink" href="#herramientas" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Base</th>
-<th>Valor</th>
+<th>Para ver…</th>
+<th>Comando</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Decimal</td>
-<td><code>288</code>₁₀</td>
+<td>Todo a la vez</td>
+<td><code>htop</code> (o <code>top</code>)</td>
 </tr>
 <tr>
-<td>Binario</td>
-<td><code>100100000</code>₂</td>
+<td>Carga y tiempo encendido</td>
+<td><code>uptime</code></td>
 </tr>
 <tr>
-<td>Hexadecimal</td>
-<td><code>120</code>₁₆ (<code>0x120</code>)</td>
+<td>Memoria</td>
+<td><code>free -h</code></td>
+</tr>
+<tr>
+<td>Espacio en disco</td>
+<td><code>df -h</code>, <code>df -i</code></td>
+</tr>
+<tr>
+<td>Qué ocupa una carpeta</td>
+<td><code>du -sh *</code>, <code>ncdu</code></td>
+</tr>
+<tr>
+<td>Puertos abiertos</td>
+<td><code>ss -tulpn</code></td>
+</tr>
+<tr>
+<td>Temperaturas</td>
+<td><code>sensors</code></td>
+</tr>
+<tr>
+<td>Hardware y estado general</td>
+<td><code>inxi -Fxz</code></td>
 </tr>
 </tbody>
 </table>
-<hr />
+<p>En el escritorio de LliureX está además el <strong>Monitor del sistema</strong> de Plasma, con la misma información en gráficas.</p>
+<h3 id="los-registros-del-sistema">Los registros del sistema<a class="headerlink" href="#los-registros-del-sistema" title="Permanent link">&para;</a></h3>
+<p>Cuando algo falla, la respuesta casi siempre está escrita en un registro. En LliureX se consultan con <strong><code>journalctl</code></strong>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos="1 "></span>journalctl<span class="w"> </span>-xe<span class="w">                 </span><span class="c1"># últimas entradas, con contexto</span>
+</span><span id="__span-0-2"><span class="linenos" data-linenos="2 "></span>journalctl<span class="w"> </span>-u<span class="w"> </span>ssh<span class="w"> </span>-n<span class="w"> </span><span class="m">30</span><span class="w">        </span><span class="c1"># solo de un servicio</span>
+</span><span id="__span-0-3"><span class="linenos" data-linenos="3 "></span>journalctl<span class="w"> </span>-p<span class="w"> </span>err<span class="w"> </span>-b<span class="w">           </span><span class="c1"># solo errores del arranque actual</span>
+</span><span id="__span-0-4"><span class="linenos" data-linenos="4 "></span>journalctl<span class="w"> </span>-b<span class="w"> </span>-1<span class="w">               </span><span class="c1"># arranque anterior: útil tras un cuelgue</span>
+</span><span id="__span-0-5"><span class="linenos" data-linenos="5 "></span>journalctl<span class="w"> </span>-f<span class="w">                  </span><span class="c1"># en vivo</span>
+</span><span id="__span-0-6"><span class="linenos" data-linenos="6 "></span>dmesg<span class="w"> </span>-T<span class="w">                       </span><span class="c1"># mensajes del núcleo: discos, USB, hardware</span>
+</span></code></pre></div>
+<p>Los registros clásicos siguen en <code>/var/log</code> (<code>auth.log</code> para los accesos, <code>syslog</code> para el sistema). Y se analizan con lo que ya sabéis de la UD6.3: <code>grep</code>, <code>sort</code>, <code>uniq -c</code>.</p>
+<h3 id="como-se-diagnostica-una-averia">Cómo se diagnostica una avería<a class="headerlink" href="#como-se-diagnostica-una-averia" title="Permanent link">&para;</a></h3>
 <ol>
-<li>De decimal a binario (divisiones sucesivas entre 2)</li>
+<li><strong>Delimitar</strong>: qué falla exactamente, desde cuándo, y <strong>qué cambió justo antes</strong>.</li>
+<li><strong>Medir, no suponer</strong>: cada sospecha se confirma con una herramienta.</li>
+<li><strong>Un cambio cada vez</strong>, comprobando el efecto antes del siguiente.</li>
+<li><strong>Documentar</strong> lo que se ha probado, funcione o no.</li>
 </ol>
-<p>El método consiste en <strong>dividir el número entre 2 repetidamente</strong>, anotando el <strong>resto</strong> de cada división (que solo puede ser 0 o 1), hasta llegar a un cociente de 0. El número binario se forma leyendo los restos <strong>de abajo hacia arriba</strong>, es decir, del último al primero.</p>
 <table>
 <thead>
 <tr>
-<th>Paso</th>
-<th>División</th>
-<th>Cociente</th>
-<th>Resto</th>
+<th>Síntoma</th>
+<th>Por dónde empezar</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>288 ÷ 2</td>
-<td>144</td>
-<td><strong>0</strong></td>
+<td>Va lento</td>
+<td><code>htop</code>: ¿CPU, memoria o <code>wa</code> alto?</td>
 </tr>
 <tr>
-<td>2</td>
-<td>144 ÷ 2</td>
-<td>72</td>
-<td><strong>0</strong></td>
+<td>No queda espacio</td>
+<td><code>df -h</code> y <code>df -i</code>, luego <code>ncdu</code></td>
 </tr>
 <tr>
-<td>3</td>
-<td>72 ÷ 2</td>
-<td>36</td>
-<td><strong>0</strong></td>
+<td>Un servicio no responde</td>
+<td><code>systemctl status</code> → <code>journalctl -u</code></td>
 </tr>
 <tr>
-<td>4</td>
-<td>36 ÷ 2</td>
-<td>18</td>
-<td><strong>0</strong></td>
+<td>No hay red</td>
+<td><code>ip a</code> → <code>ip route</code> → <code>ping</code></td>
 </tr>
 <tr>
-<td>5</td>
-<td>18 ÷ 2</td>
-<td>9</td>
-<td><strong>0</strong></td>
-</tr>
-<tr>
-<td>6</td>
-<td>9 ÷ 2</td>
-<td>4</td>
-<td><strong>1</strong></td>
-</tr>
-<tr>
-<td>7</td>
-<td>4 ÷ 2</td>
-<td>2</td>
-<td><strong>0</strong></td>
-</tr>
-<tr>
-<td>8</td>
-<td>2 ÷ 2</td>
-<td>1</td>
-<td><strong>0</strong></td>
-</tr>
-<tr>
-<td>9</td>
-<td>1 ÷ 2</td>
-<td>0</td>
-<td><strong>1</strong></td>
+<td>Se reinicia solo</td>
+<td><code>journalctl -b -1 -p err</code>, <code>sensors</code></td>
 </tr>
 </tbody>
 </table>
-<p>Paramos en el paso 9 porque el cociente ya es 0.</p>
-<p>Ahora leemos la columna de restos <strong>de abajo arriba</strong> (del paso 9 al paso 1):</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos="1 "></span>1 0 0 1 0 0 0 0 0
-</span></code></pre></div>
-<p><strong>288₁₀ = 100100000₂</strong></p>
-<blockquote>
-<p>El primer resto obtenido es el <strong>bit menos significativo</strong> (el de la derecha) y el último es el <strong>bit más significativo</strong> (el de la izquierda). Por eso se lee al revés.</p>
-</blockquote>
-<h3 id="comprobacion-por-sumas-de-potencias-de-2">Comprobación por sumas de potencias de 2<a class="headerlink" href="#comprobacion-por-sumas-de-potencias-de-2" title="Permanent link">&para;</a></h3>
-<p>Otra forma de llegar al mismo resultado: buscar la mayor potencia de 2 que cabe en el número e ir restando.</p>
-<ul>
-<li>La mayor potencia de 2 menor o igual que 288 es <strong>256</strong> (2⁸). → 288 − 256 = <strong>32</strong></li>
-<li>La mayor potencia de 2 menor o igual que 32 es <strong>32</strong> (2⁵). → 32 − 32 = <strong>0</strong>
-Así que 288 = 256 + 32 = 2⁸ + 2⁵. Colocamos un 1 en las posiciones 8 y 5, y un 0 en el resto:</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Posición</th>
-<th>8</th>
-<th>7</th>
-<th>6</th>
-<th>5</th>
-<th>4</th>
-<th>3</th>
-<th>2</th>
-<th>1</th>
-<th>0</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Valor (2ⁿ)</td>
-<td>256</td>
-<td>128</td>
-<td>64</td>
-<td><strong>32</strong></td>
-<td>16</td>
-<td>8</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Bit</td>
-<td><strong>1</strong></td>
-<td>0</td>
-<td>0</td>
-<td><strong>1</strong></td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<p><code>256 + 32 = 288</code> ✔ Coincide con el resultado de las divisiones.</p>
-<p>Hacen falta <strong>9 bits</strong> para representar 288. Con 8 bits solo se llega hasta 255, así que este número no cabe en un byte sin signo.</p>
-<ol start="2">
-<li>De decimal a hexadecimal (divisiones sucesivas entre 16)</li>
-</ol>
-<p>El procedimiento es idéntico, pero dividiendo entre <strong>16</strong>. Los restos van de 0 a 15, y los valores del 10 al 15 se escriben con letras: A=10, B=11, C=12, D=13, E=14, F=15.</p>
-<table>
-<thead>
-<tr>
-<th>Paso</th>
-<th>División</th>
-<th>Cociente</th>
-<th>Resto</th>
-<th>Dígito hex</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>288 ÷ 16</td>
-<td>18</td>
-<td><strong>0</strong></td>
-<td><code>0</code></td>
-</tr>
-<tr>
-<td>2</td>
-<td>18 ÷ 16</td>
-<td>1</td>
-<td><strong>2</strong></td>
-<td><code>2</code></td>
-</tr>
-<tr>
-<td>3</td>
-<td>1 ÷ 16</td>
-<td>0</td>
-<td><strong>1</strong></td>
-<td><code>1</code></td>
-</tr>
-</tbody>
-</table>
-<p>Leemos los restos <strong>de abajo arriba</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><span class="linenos" data-linenos="1 "></span>1 2 0
-</span></code></pre></div>
-<p><strong>288₁₀ = 120₁₆ = 0x120</strong></p>
-<p>Comprobación</p>
-<p>Multiplicamos cada dígito por su peso (potencias de 16):</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><span class="linenos" data-linenos="1 "></span>1 × 16²  +  2 × 16¹  +  0 × 16⁰
-</span><span id="__span-2-2"><span class="linenos" data-linenos="2 "></span>= 1 × 256 + 2 × 16 + 0 × 1
-</span><span id="__span-2-3"><span class="linenos" data-linenos="3 "></span>= 256 + 32 + 0
-</span><span id="__span-2-4"><span class="linenos" data-linenos="4 "></span>= 288  ✔
-</span></code></pre></div>
-<hr />
-<ol start="3">
-<li>Atajo: de binario a hexadecimal directamente</li>
-</ol>
-<p>Como 16 = 2⁴, <strong>cada dígito hexadecimal equivale exactamente a 4 bits</strong>. Esto permite convertir sin pasar por decimal.</p>
-<p>Partimos del binario y <strong>agrupamos de 4 en 4 desde la derecha</strong>, rellenando con ceros a la izquierda si el último grupo queda incompleto:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><span class="linenos" data-linenos="1 "></span>100100000   →   1 0010 0000   →   0001 0010 0000
-</span><span id="__span-3-2"><span class="linenos" data-linenos="2 "></span>                                └─┬┘ └─┬┘ └─┬┘
-</span><span id="__span-3-3"><span class="linenos" data-linenos="3 "></span>                                    1    2    0
-</span></code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Grupo de 4 bits</th>
-<th>Valor decimal</th>
-<th>Dígito hex</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>0001</code></td>
-<td>1</td>
-<td><code>1</code></td>
-</tr>
-<tr>
-<td><code>0010</code></td>
-<td>2</td>
-<td><code>2</code></td>
-</tr>
-<tr>
-<td><code>0000</code></td>
-<td>0</td>
-<td><code>0</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Resultado: <code>0x120</code></strong> ✔ Coincide con el apartado 2.</p>
-<p>Este atajo funciona igual en sentido inverso: cada dígito hexadecimal se sustituye por sus 4 bits y se obtiene el binario directamente. Es la razón por la que el hexadecimal se usa tanto en informática: es una forma <strong>compacta</strong> de escribir binario (3 dígitos hex frente a 9 bits) sin perder la correspondencia directa con los bits.</p>
-<ol start="4">
-<li>
-<p>Resumen del procedimiento</p>
-</li>
-<li>
-<p><strong>A binario:</strong> divisiones sucesivas entre 2 → leer restos de abajo arriba.</p>
-</li>
-<li><strong>A hexadecimal:</strong> divisiones sucesivas entre 16 → leer restos de abajo arriba (10–15 como A–F).</li>
-<li><strong>Atajo binario ↔ hexadecimal:</strong> agrupar los bits de 4 en 4 desde la derecha.</li>
-<li><strong>Comprobar siempre:</strong> multiplicar cada dígito por su peso (potencia de la base) y sumar. Debe dar el número original.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><span class="linenos" data-linenos="1 "></span>288₁₀  =  100100000₂  =  120₁₆
-</span></code></pre></div></li>
-</ol>
-</div>
-<h2 id="activicades">Activicades<a class="headerlink" href="#activicades" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong><abbr title="Actividades de clase.">AC</abbr> 0101</strong>. Convierte a las bases indicadas:</p>
-<ol>
-<li><code>183</code>₁₀ → binario y hexadecimal </li>
-<li><code>1101 0110</code>₂ → decimal y hexadecimal </li>
-<li><code>0x3F7</code> → decimal y binario.</li>
-</ol>
-</li>
-<li>
-<p><strong><abbr title="Actividades de clase.">AC</abbr> 0102</strong>. Un disco anunciado como <strong>2 TB</strong> aparece en el sistema como 1,81 TiB. Justifica la diferencia con el cálculo exacto.</p>
-</li>
-<li>
-<p><strong><abbr title="Actividades de clase.">AC</abbr> 0103</strong>. Tu conexión es de <strong>300 Mb/s</strong> simétricos. ¿Cuánto tardarías, en el mejor de los casos, en descargar una ISO de LliureX de 4,7 GB? Indica las conversiones.</p>
-</li>
-</ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 
 <!-- Instrumentos de Evaluación -->
@@ -934,44 +593,6 @@ Así que 288 = 256 + 32 = 2⁸ + 2⁵. Colocamos un 1 en las posiciones 8 y 5, y
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pie" >
-        
-          
-          <a href="ResumenSA.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Propuesta didáctica SA 01">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Anterior
-              </span>
-              <div class="md-ellipsis">
-                Propuesta didáctica SA 01
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="0102_ArquitecturaPC.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Arquitectura de un computador">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              <div class="md-ellipsis">
-                Arquitectura de un computador
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
