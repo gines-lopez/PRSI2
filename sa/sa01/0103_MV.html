@@ -292,6 +292,8 @@
       
         
       
+        
+      
     
     
     
@@ -538,10 +540,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actividades" class="md-nav__link">
+  <a href="#actividad" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actividades
+        Actividad
       
     </span>
   </a>
@@ -585,6 +587,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0105_ComandosLinux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -615,7 +645,7 @@
 <p>La máquina virtual ve un ordenador normal: una CPU, una RAM, un disco duro, una tarjeta de red. Pero todo eso es software: el «disco duro» es en realidad un fichero en <code>/var/lib/libvirt/images/</code>.</p>
 <p><strong>Por qué se usa en administración de sistemas:</strong></p>
 <ul>
-<li><strong>Aislamiento</strong>: si rompes la VM, el equipo real no se entera.</li>
+<li><strong>Aislamiento</strong>: si rompes la <abbr title="Máquina virtual">VM</abbr>, el equipo real no se entera.</li>
 <li><strong>Reversibilidad</strong>: con una instantánea vuelves al estado anterior en segundos.</li>
 <li><strong>Ahorro</strong>: un servidor físico puede alojar 10 servidores virtuales.</li>
 <li><strong>Pruebas</strong>: puedes instalar, romper y reinstalar sin pedir permiso a nadie.</li>
@@ -626,7 +656,7 @@
 </div>
 
 <h2 id="recursos-que-hay-que-asignar">Recursos que hay que asignar<a class="headerlink" href="#recursos-que-hay-que-asignar" title="Permanent link">&para;</a></h2>
-<p>Al crear una VM decides qué hardware «tendrá». Tres reglas:</p>
+<p>Al crear una <abbr title="Máquina virtual">VM</abbr> decides qué hardware «tendrá». Tres reglas:</p>
 <table>
 <thead>
 <tr>
@@ -683,7 +713,7 @@
 </tbody>
 </table>
 <p>Un servidor no lleva escritorio porque consumiría RAM sin aportar nada y aumentaría la superficie de ataque. Se administra desde otro equipo con <strong>SSH</strong>.</p>
-<h2 id="modos-de-red-de-una-vm">Modos de red de una VM<a class="headerlink" href="#modos-de-red-de-una-vm" title="Permanent link">&para;</a></h2>
+<h2 id="modos-de-red-de-una-vm">Modos de red de una <abbr title="Máquina virtual">VM</abbr><a class="headerlink" href="#modos-de-red-de-una-vm" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -695,29 +725,32 @@
 <tbody>
 <tr>
 <td><strong>NAT</strong></td>
-<td>La VM sale a Internet a través del anfitrión, pero nadie de fuera la ve</td>
+<td>La <abbr title="Máquina virtual">VM</abbr> sale a Internet a través del anfitrión, pero nadie de fuera la ve</td>
 <td>Instalar y actualizar</td>
 </tr>
 <tr>
 <td><strong>Puente (bridge)</strong></td>
-<td>La VM recibe una IP de la red del aula, como un PC más</td>
+<td>La <abbr title="Máquina virtual">VM</abbr> recibe una IP de la red del aula, como un PC más</td>
 <td>Que el servidor sea accesible</td>
 </tr>
 <tr>
 <td><strong>Red aislada</strong></td>
-<td>Las VM se ven entre sí, sin Internet</td>
+<td>Las <abbr title="Máquina virtual">VM</abbr> se ven entre sí, sin Internet</td>
 <td>Laboratorio seguro</td>
 </tr>
 </tbody>
 </table>
 <h2 id="instantaneas-snapshots">Instantáneas (snapshots)<a class="headerlink" href="#instantaneas-snapshots" title="Permanent link">&para;</a></h2>
-<p>Una instantánea <strong>congela el estado completo</strong> de la VM. Si algo sale mal, restauras y vuelves a ese punto exacto.</p>
+<p>Una instantánea <strong>congela el estado completo</strong> de la <abbr title="Máquina virtual">VM</abbr>. Si algo sale mal, restauras y vuelves a ese punto exacto.</p>
 <p><strong>Regla de oro de la unidad: instantánea antes de cualquier cambio arriesgado.</strong></p>
 <div class="admonition danger">
 <p class="admonition-title">Ojo</p>
-<p>Una instantánea vive dentro del mismo fichero de disco. Si se corrompe el fichero, se pierden VM e instantáneas a la vez. <strong>No es una copia de seguridad.</strong></p>
+<p>Una instantánea vive dentro del mismo fichero de disco. Si se corrompe el fichero, se pierden <abbr title="Máquina virtual">VM</abbr> e instantáneas a la vez. <strong>No es una copia de seguridad.</strong></p>
 </div>
-<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<h2 id="actividad">Actividad<a class="headerlink" href="#actividad" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><abbr title="Actividades de clase.">AC</abbr> 0110</strong>. Monta una máquina virtual, documenta el proceso con capturas y las dificultades encontradas.</li>
+</ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 
 <!-- Instrumentos de Evaluación -->
