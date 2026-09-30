@@ -44,7 +44,7 @@
     text-align: center;
     margin: 0;
     padding: 10px 0;
-    width: 6%;
+    width: 10%;
 }
 
 #body-ut-head > p:last-child, #body-ut-head > p:nth-child(11) {
@@ -77,8 +77,8 @@
     text-align: center;
     margin: 0;
     padding: 10px 0;
-    min-width: 6%;
-    width: 6%;
+    min-width: 10%;
+    width: 10%;
 }
 
 .body-ut > p:last-child, .body-ut > p:nth-child(11) {
@@ -120,6 +120,6 @@
 .body-ut-ra p:first-child{
     text-align: left;
     padding: 10px 10px;
-    width: 79%;
+    width: 75%;
 }
 
