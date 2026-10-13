@@ -1,0 +1,1252 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/gines-lopez/PRSI2/sa/sa02/0201_ProblemaAPrograma.html">
+      
+      
+        <link rel="prev" href="ResumenSA.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Del problema al programa - Programación, Redes y Sistemas Informáticos 2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra_index.css">
+    
+      <link rel="stylesheet" href="../../css/extra_pd.css">
+    
+      <link rel="stylesheet" href="../../css/extra_general.css">
+    
+      <link rel="stylesheet" href="../../css/extra_tablasresumen.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#del-problema-al-programa-python-y-su-entorno" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../index.html" title="Programación, Redes y Sistemas Informáticos 2" class="md-header__button md-logo" aria-label="Programación, Redes y Sistemas Informáticos 2" data-md-component="logo">
+      
+  <img src="../../img/logofp.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, Redes y Sistemas Informáticos 2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Del problema al programa
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="blue"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="blue"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Programación, Redes y Sistemas Informáticos 2" class="md-nav__button md-logo" aria-label="Programación, Redes y Sistemas Informáticos 2" data-md-component="logo">
+      
+  <img src="../../img/logofp.png" alt="logo">
+
+    </a>
+    Programación, Redes y Sistemas Informáticos 2
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SA 01. Administración de Sistemas Informáticos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SA 01. Administración de Sistemas Informáticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/ResumenSA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica SA 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0101_RepresentacionInfo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Representación de la información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0102_ArquitecturaPC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitectura de un computador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0103_MV.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Máquinas virtuales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0104_Monitorizacion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitorización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0105_ComandosLinux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SA 02. Programación en un lenguaje de alto nivel.
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SA 02. Programación en un lenguaje de alto nivel.
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ResumenSA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica SA 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Del problema al programa
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="0201_ProblemaAPrograma.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Del problema al programa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-algoritmo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es un algoritmo?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pensamiento-computacional-los-4-pilares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pensamiento computacional: los 4 pilares
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lenguajes-compilados-e-interpretados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguajes compilados e interpretados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lenguajes compilados e interpretados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#java-frente-a-python-el-mismo-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java frente a Python: el mismo programa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-entorno-de-trabajo-en-lliurex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El entorno de trabajo en LliureX
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El entorno de trabajo en LliureX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thonny-lo-usaremos-al-principio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thonny (lo usaremos al principio)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-para-proyectos-mas-grandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code (para proyectos más grandes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizacion-de-ficheros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organización de ficheros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primer-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primer programa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primer programa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#print-mostrar-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        print(): mostrar información
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comentarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errores-de-sintaxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errores de sintaxis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividades
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="del-problema-al-programa-python-y-su-entorno">Del problema al programa: Python y su entorno<a class="headerlink" href="#del-problema-al-programa-python-y-su-entorno" title="Permanent link">&para;</a></h1>
+<h2 id="que-es-un-algoritmo">¿Qué es un algoritmo?<a class="headerlink" href="#que-es-un-algoritmo" title="Permanent link">&para;</a></h2>
+<p>Un <strong>algoritmo</strong> es una secuencia <strong>finita</strong> y <strong>ordenada</strong> de instrucciones <strong>precisas</strong> que resuelve un problema o realiza una tarea.</p>
+<p>Características que debe cumplir:</p>
+<ul>
+<li><strong>Preciso:</strong> cada paso se entiende de una sola manera. «Echa un poco de azúcar» no es preciso; «echa una cucharada de azúcar» sí.</li>
+<li><strong>Finito:</strong> termina en algún momento.</li>
+<li><strong>Definido:</strong> con las mismas entradas produce siempre la misma salida.</li>
+<li><strong>Tiene entradas y salidas:</strong> datos de partida y un resultado.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Los ordenadores son tontos</p>
+<p>Un ordenador no «entiende» nada: ejecuta exactamente lo que se le dice. Por eso el algoritmo tiene que estar bien pensado <strong>antes</strong> de programarlo.</p>
+</div>
+<h2 id="pensamiento-computacional-los-4-pilares">Pensamiento computacional: los 4 pilares<a class="headerlink" href="#pensamiento-computacional-los-4-pilares" title="Permanent link">&para;</a></h2>
+<p>El pensamiento computacional es la forma de abordar un problema para que su solución pueda ejecutarla una persona o una máquina.</p>
+<table>
+<thead>
+<tr>
+<th>Pilar</th>
+<th>Qué significa</th>
+<th>Ejemplo con el café</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descomposición</strong></td>
+<td>Dividir un problema grande en subproblemas pequeños</td>
+<td>Calentar agua · preparar la taza · servir · endulzar</td>
+</tr>
+<tr>
+<td><strong>Reconocimiento de patrones</strong></td>
+<td>Detectar similitudes con problemas ya resueltos</td>
+<td>Preparar un té sigue casi los mismos pasos</td>
+</tr>
+<tr>
+<td><strong>Abstracción</strong></td>
+<td>Quedarse con lo importante e ignorar los detalles irrelevantes</td>
+<td>Da igual el color de la taza; importa su capacidad</td>
+</tr>
+<tr>
+<td><strong>Algoritmos</strong></td>
+<td>Escribir los pasos ordenados para resolverlo</td>
+<td>El pseudocódigo de la actividad 1</td>
+</tr>
+</tbody>
+</table>
+<p>Estos 4 pilares son la <strong>rutina de trabajo de toda la unidad</strong>: en cada práctica habrá que analizar, descomponer, buscar patrones y diseñar el algoritmo antes de escribir código.</p>
+<h2 id="lenguajes-compilados-e-interpretados">Lenguajes compilados e interpretados<a class="headerlink" href="#lenguajes-compilados-e-interpretados" title="Permanent link">&para;</a></h2>
+<p>El ordenador solo entiende <strong>código máquina</strong> (ceros y unos). Un <strong>lenguaje de programación</strong> nos permite escribir instrucciones en un formato legible por personas, que luego se traducen a código máquina. Esa traducción puede hacerse de dos formas:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Compilado</strong></th>
+<th><strong>Interpretado</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cómo se traduce</td>
+<td>Todo el programa de una vez, antes de ejecutarlo</td>
+<td>Instrucción a instrucción, mientras se ejecuta</td>
+</tr>
+<tr>
+<td>Resultado</td>
+<td>Un fichero ejecutable</td>
+<td>No genera ejecutable; necesita el intérprete</td>
+</tr>
+<tr>
+<td>Velocidad</td>
+<td>Más rápido al ejecutar</td>
+<td>Algo más lento</td>
+</tr>
+<tr>
+<td>Errores</td>
+<td>Se detectan muchos al compilar</td>
+<td>Aparecen al llegar a la línea con el error</td>
+</tr>
+<tr>
+<td>Ejemplos</td>
+<td>C, C++, Rust</td>
+<td>Python, JavaScript</td>
+</tr>
+</tbody>
+</table>
+<p><strong>¿Y Java, que visteis el curso pasado?</strong> Java es un caso <strong>mixto</strong>: se compila a <em>bytecode</em> (<code>.class</code>) y después la Máquina Virtual de Java (JVM) lo ejecuta. Python también genera internamente <em>bytecode</em>, pero para quien programa se comporta como interpretado: se escribe y se ejecuta directamente.</p>
+<h3 id="java-frente-a-python-el-mismo-programa">Java frente a Python: el mismo programa<a class="headerlink" href="#java-frente-a-python-el-mismo-programa" title="Permanent link">&para;</a></h3>
+<p><strong>Java:</strong></p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos="1 "></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Hola</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><span class="linenos" data-linenos="2 "></span><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><span class="linenos" data-linenos="3 "></span><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;¡Hola, mundo!&quot;</span><span class="p">);</span>
+</span><span id="__span-0-4"><span class="linenos" data-linenos="4 "></span><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-5"><span class="linenos" data-linenos="5 "></span><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Python:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><span class="linenos" data-linenos="1 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola, mundo!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Diferencias que conviene observar:</p>
+<ul>
+<li>Python no necesita clase ni método <code>main</code> para empezar.</li>
+<li>No hay <code>;</code> al final de cada línea.</li>
+<li>Python usa la <strong>indentación</strong> (sangría) para delimitar bloques, en lugar de llaves <code>{ }</code>. La sangría es <strong>obligatoria</strong>.</li>
+<li>No hay que declarar el tipo de las variables (lo veremos en la sesión 3).</li>
+</ul>
+<p>Python es un <strong>lenguaje de alto nivel</strong>: está más cerca del lenguaje humano que del código máquina. Por eso es muy usado en ciencia de datos, inteligencia artificial, automatización y enseñanza.</p>
+<hr />
+<h2 id="el-entorno-de-trabajo-en-lliurex">El entorno de trabajo en LliureX<a class="headerlink" href="#el-entorno-de-trabajo-en-lliurex" title="Permanent link">&para;</a></h2>
+<p>LliureX incluye Python 3. Para comprobarlo, abre una terminal y escribe:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><span class="linenos" data-linenos="1 "></span>python3<span class="w"> </span>--version
+</span></code></pre></div>
+<h3 id="thonny-lo-usaremos-al-principio">Thonny (lo usaremos al principio)<a class="headerlink" href="#thonny-lo-usaremos-al-principio" title="Permanent link">&para;</a></h3>
+<ul>
+<li>IDE sencillo pensado para aprender.</li>
+<li>Incluye un <strong>depurador visual</strong> que muestra paso a paso qué hace el programa y cuánto valen las variables.</li>
+</ul>
+<p>Partes de Thonny:</p>
+<ol>
+<li><strong>Editor</strong> (arriba): donde se escribe el programa. Se guarda con extensión <code>.py</code>.</li>
+<li><strong>Shell</strong> (abajo): donde aparece la salida y donde se pueden probar instrucciones sueltas.</li>
+<li><strong>Botón verde ▶</strong> (o <code>F5</code>): ejecuta el programa.</li>
+</ol>
+<h3 id="vs-code-para-proyectos-mas-grandes">VS Code (para proyectos más grandes)<a class="headerlink" href="#vs-code-para-proyectos-mas-grandes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Editor profesional, el mismo que se usa en la industria.</li>
+<li>Necesita la extensión <strong>Python</strong> (de Microsoft) para ejecutar y depurar.</li>
+<li>Lo usaremos a partir del bloque de funciones y en el proyecto final.</li>
+</ul>
+<h3 id="organizacion-de-ficheros">Organización de ficheros<a class="headerlink" href="#organizacion-de-ficheros" title="Permanent link">&para;</a></h3>
+<p>Crea esta carpeta y guarda ahí todo lo de la unidad:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><span class="linenos" data-linenos="1 "></span>UD2_Python/
+</span><span id="__span-3-2"><span class="linenos" data-linenos="2 "></span>└── S01/
+</span><span id="__span-3-3"><span class="linenos" data-linenos="3 "></span>    ├── hola.py
+</span><span id="__span-3-4"><span class="linenos" data-linenos="4 "></span>    └── cafe.py
+</span></code></pre></div>
+<p>Nombres de fichero: en minúsculas, sin espacios, sin tildes y terminados en <code>.py</code>.</p>
+<h2 id="primer-programa">Primer programa<a class="headerlink" href="#primer-programa" title="Permanent link">&para;</a></h2>
+<h3 id="print-mostrar-informacion"><code>print()</code>: mostrar información<a class="headerlink" href="#print-mostrar-informacion" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><span class="linenos" data-linenos="1 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola, mundo!&quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><span class="linenos" data-linenos="2 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Me llamo Ana&quot;</span><span class="p">)</span>
+</span><span id="__span-4-3"><span class="linenos" data-linenos="3 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tengo&quot;</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="s2">&quot;años&quot;</span><span class="p">)</span>
+</span><span id="__span-4-4"><span class="linenos" data-linenos="4 "></span><span class="nb">print</span><span class="p">()</span>                      <span class="c1"># línea en blanco</span>
+</span><span id="__span-4-5"><span class="linenos" data-linenos="5 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fin del programa&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li>El texto va entre comillas dobles <code>" "</code> o simples <code>' '</code>.</li>
+<li>Se pueden mostrar varios elementos separados por comas; Python añade un espacio entre ellos.</li>
+<li><code>print()</code> sin nada imprime una línea vacía.</li>
+</ul>
+<h3 id="comentarios">Comentarios<a class="headerlink" href="#comentarios" title="Permanent link">&para;</a></h3>
+<p>Los comentarios sirven para explicar el código a las personas. Python los ignora.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><span class="linenos" data-linenos="1 "></span><span class="c1"># Esto es un comentario de una línea</span>
+</span><span id="__span-5-2"><span class="linenos" data-linenos="2 "></span>
+</span><span id="__span-5-3"><span class="linenos" data-linenos="3 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola&quot;</span><span class="p">)</span>  <span class="c1"># También puede ir al final de una línea</span>
+</span><span id="__span-5-4"><span class="linenos" data-linenos="4 "></span>
+</span><span id="__span-5-5"><span class="linenos" data-linenos="5 "></span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-5-6"><span class="linenos" data-linenos="6 "></span><span class="sd">Esto es un bloque de texto de varias líneas.</span>
+</span><span id="__span-5-7"><span class="linenos" data-linenos="7 "></span><span class="sd">Se usa sobre todo para documentar programas (docstrings).</span>
+</span><span id="__span-5-8"><span class="linenos" data-linenos="8 "></span><span class="sd">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<p>Buena práctica: empezar cada programa con un comentario que diga <strong>qué hace, quién lo ha hecho y cuándo</strong>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><span class="linenos" data-linenos="1 "></span><span class="c1"># Programa: hola.py</span>
+</span><span id="__span-6-2"><span class="linenos" data-linenos="2 "></span><span class="c1"># Autor/a: nombre y apellidos</span>
+</span><span id="__span-6-3"><span class="linenos" data-linenos="3 "></span><span class="c1"># Fecha: 2026-10</span>
+</span><span id="__span-6-4"><span class="linenos" data-linenos="4 "></span><span class="c1"># Descripción: muestra un saludo por pantalla</span>
+</span></code></pre></div>
+<h3 id="errores-de-sintaxis">Errores de sintaxis<a class="headerlink" href="#errores-de-sintaxis" title="Permanent link">&para;</a></h3>
+<p>Un <strong>error de sintaxis</strong> se produce cuando el código no respeta las reglas de escritura del lenguaje. Python se niega a ejecutarlo y muestra un mensaje con la <strong>línea</strong> del error.</p>
+<table>
+<thead>
+<tr>
+<th>Código con error</th>
+<th>Mensaje (resumido)</th>
+<th>Qué pasa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>print("Hola"</code></td>
+<td><code>SyntaxError: '(' was never closed</code></td>
+<td>Falta cerrar el paréntesis</td>
+</tr>
+<tr>
+<td><code>print("Hola)</code></td>
+<td><code>SyntaxError: unterminated string literal</code></td>
+<td>Falta cerrar las comillas</td>
+</tr>
+<tr>
+<td><code>print("Hola")</code></td>
+<td><code>IndentationError: unexpected indent</code></td>
+<td>Sangría donde no toca</td>
+</tr>
+<tr>
+<td><code>Print("Hola")</code></td>
+<td><code>NameError: name 'Print' is not defined</code></td>
+<td>Python distingue mayúsculas y minúsculas</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>El último no es un error de sintaxis, sino de <strong>ejecución</strong>: la línea está bien escrita, pero <code>Print</code> no existe. Es importante distinguirlos: los de sintaxis impiden arrancar el programa; los de ejecución lo detienen al llegar a esa línea.</p>
+</div>
+<p><strong>Cómo leer un error:</strong> empieza por la <strong>última línea</strong> del mensaje (tipo de error y explicación) y después mira el <strong>número de línea</strong> que indica.</p>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 201 (). El algoritmo del café. Escribe en pseudocódigo el algoritmo para preparar un café con leche usando una cafetera de cápsulas.</p>
+<p><strong>Reglas:</strong></p>
+<ol>
+<li>Numera los pasos.</li>
+<li>Cada paso empieza por un verbo en infinitivo.</li>
+<li>Incluye al menos <strong>una decisión</strong> (SI… ENTONCES…) y <strong>una repetición</strong> (MIENTRAS… o REPETIR…).</li>
+</ol>
+</li>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 202 (). Caza de errores. Copia este programa en Thonny, ejecútalo y corrige los errores <strong>uno a uno</strong>, leyendo cada mensaje. Anota en un comentario qué error era cada uno.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><span class="linenos" data-linenos="1 "></span><span class="c1"># Programa con 4 errores</span>
+</span><span id="__span-7-2"><span class="linenos" data-linenos="2 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenido al curso de Python)</span>
+</span><span id="__span-7-3"><span class="linenos" data-linenos="3 "></span><span class="n">Print</span><span class="p">(</span><span class="s2">&quot;Hoy empezamos la unidad 2&quot;</span><span class="p">)</span>
+</span><span id="__span-7-4"><span class="linenos" data-linenos="4 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vamos a programar&quot;</span><span class="p">)</span>
+</span><span id="__span-7-5"><span class="linenos" data-linenos="5 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adiós&quot;</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 203 (). El café en Python. Traduce a Python tu algoritmo del café usando solo <code>print()</code> y comentarios. El programa debe mostrar los pasos numerados. Usa un comentario para marcar cada fase de la descomposición.</p>
+<p>Ejemplo de inicio:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><span class="linenos" data-linenos=" 1 "></span><span class="c1"># Programa: cafe.py</span>
+</span><span id="__span-8-2"><span class="linenos" data-linenos=" 2 "></span><span class="c1"># Descripción: muestra los pasos para preparar un café con leche</span>
+</span><span id="__span-8-3"><span class="linenos" data-linenos=" 3 "></span>
+</span><span id="__span-8-4"><span class="linenos" data-linenos=" 4 "></span><span class="c1"># --- Fase 1: preparar la cafetera ---</span>
+</span><span id="__span-8-5"><span class="linenos" data-linenos=" 5 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. Encender la cafetera&quot;</span><span class="p">)</span>
+</span><span id="__span-8-6"><span class="linenos" data-linenos=" 6 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. Esperar a que la luz quede fija&quot;</span><span class="p">)</span>
+</span><span id="__span-8-7"><span class="linenos" data-linenos=" 7 "></span>
+</span><span id="__span-8-8"><span class="linenos" data-linenos=" 8 "></span><span class="c1"># --- Fase 2: preparar el café ---</span>
+</span><span id="__span-8-9"><span class="linenos" data-linenos=" 9 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3. Colocar la taza&quot;</span><span class="p">)</span>
+</span><span id="__span-8-10"><span class="linenos" data-linenos="10 "></span><span class="c1"># ...completa el resto</span>
+</span></code></pre></div>
+<blockquote>
+<p>Pregunta para pensar: tu algoritmo tenía decisiones («SI se quiere leche…»), pero con <code>print()</code> solo podemos mostrar todos los pasos. ¿Qué le falta a Python para poder tomar decisiones? → Lo veremos en la sesión 5.</p>
+</blockquote>
+</li>
+<li>
+<p><abbr title="Actividades de profundización.">AP</abbr> 204 (). Haz un programa <code>tarjeta.py</code> que muestre una tarjeta de presentación dibujada con caracteres:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><span class="linenos" data-linenos="1 "></span>+----------------------------+
+</span><span id="__span-9-2"><span class="linenos" data-linenos="2 "></span>|  Nombre: Ana López         |
+</span><span id="__span-9-3"><span class="linenos" data-linenos="3 "></span>|  Curso: 2º BACH B          |
+</span><span id="__span-9-4"><span class="linenos" data-linenos="4 "></span>|  Lenguaje favorito: Python |
+</span><span id="__span-9-5"><span class="linenos" data-linenos="5 "></span>+----------------------------+
+</span></code></pre></div>
+</li>
+</ul>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="ResumenSA.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Propuesta didáctica SA 01">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Propuesta didáctica SA 01
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ginés López García
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/gineslopez/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gines-lopez" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://gines-lopez.github.io" target="_blank" rel="noopener" title="gines-lopez.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ginesenclase" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<g.lopezgarcia2@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
