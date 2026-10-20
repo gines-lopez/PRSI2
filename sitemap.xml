@@ -2,46 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/index.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/includes/abbreviations.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/0101_RepresentacionInfo.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/0102_ArquitecturaPC.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/0103_MV.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/0104_Monitorizacion.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/0105_ComandosLinux.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/ResumenSA.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa01/extra_sistemas.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa02/0201_ProblemaAPrograma.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gines-lopez/PRSI2/sa/sa02/0202_Analizar.html</loc>
+         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/PRSI2/sa/sa02/ResumenSA.html</loc>
-         <lastmod>2026-10-13</lastmod>
+         <lastmod>2026-10-20</lastmod>
     </url>
 </urlset>
