@@ -797,6 +797,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividades
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -984,6 +995,66 @@
 <p><strong>E5 · Ficha personal.</strong> Pide nombre, año de nacimiento y altura. Muestra, con una sola f-string:
 <code>Me llamo Lucía, este año cumplo 17 y mido 1.68 m.</code>
 (Define <code>AÑO_ACTUAL = 2026</code> como constante.)</p>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Cómo trabajar cada reto</p>
+<ol>
+<li>Lee el enunciado y escribe al principio del fichero un <strong>comentario de análisis</strong>: entradas, salidas y fórmula.</li>
+<li>Programa.</li>
+<li>Rellena la <strong>tabla de casos de prueba</strong>: al menos 3 casos por reto, uno de ellos con un valor límite (0, valores muy grandes…). Calcula la salida esperada <strong>a mano o con calculadora antes</strong> de ejecutar.</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><span class="linenos" data-linenos="1 "></span>| Caso | Entrada | Salida esperada | Salida obtenida | ¿OK? |
+</span></code></pre></div>
+<p>Si la salida obtenida no coincide con la esperada, hay un error en el programa <strong>o</strong> en tu cálculo. Averígualo.</p>
+</div>
+<ul>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 208 (). Factura de la luz (<code>luz.py</code>). Una familia quiere estimar su factura. El programa pide la lectura del contador al inicio y al final del mes (en kWh) y el precio del kWh. Calcula el consumo, el importe sin impuestos, el IVA (21 %) y el total.</p>
+<p>Salida esperada (ejemplo):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><span class="linenos" data-linenos="1 "></span>Consumo: 250 kWh
+</span><span id="__span-10-2"><span class="linenos" data-linenos="2 "></span>Importe energía: 37.50 €
+</span><span id="__span-10-3"><span class="linenos" data-linenos="3 "></span>IVA (21%): 7.88 €
+</span><span id="__span-10-4"><span class="linenos" data-linenos="4 "></span>TOTAL: 45.38 €
+</span></code></pre></div>
+<ul>
+<li>Usa una constante <code>IVA = 0.21</code>.</li>
+<li>Pregunta para pensar: ¿qué pasa si la lectura final es menor que la inicial? Anótalo como restricción (lo controlaremos con condicionales en la sesión 5).</li>
+</ul>
+</li>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 209 (). Conversor de segundos (<code>segundos.py</code>). Un cronómetro guarda el tiempo en segundos. Pide una cantidad de segundos y muéstrala en formato <code>h:m:s</code>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><span class="linenos" data-linenos="1 "></span>Segundos: 3725
+</span><span id="__span-11-2"><span class="linenos" data-linenos="2 "></span>Son 1 h, 2 min y 5 s
+</span></code></pre></div>
+<ul>
+<li>Usa solo <code>//</code> y <code>%</code>.</li>
+<li>Descomposición: primero las horas, luego los minutos del resto y, por último, los segundos sobrantes.</li>
+<li>Ampliación: añade los días si supera 86 400 s.</li>
+</ul>
+</li>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 210(). Coste de un viaje en coche (<code>viaje.py</code>). Un grupo va de excursión en coche. Pide los kilómetros del viaje (solo ida), el consumo del coche (litros cada 100 km), el precio del litro y el número de ocupantes. Calcula el coste total de ida y vuelta y lo que paga cada uno.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><span class="linenos" data-linenos="1 "></span>Kilómetros (ida): 120
+</span><span id="__span-12-2"><span class="linenos" data-linenos="2 "></span>Consumo (l/100 km): 6.5
+</span><span id="__span-12-3"><span class="linenos" data-linenos="3 "></span>Precio del litro: 1.55
+</span><span id="__span-12-4"><span class="linenos" data-linenos="4 "></span>Ocupantes: 4
+</span><span id="__span-12-5"><span class="linenos" data-linenos="5 "></span>Litros necesarios (ida y vuelta): 15.60 l
+</span><span id="__span-12-6"><span class="linenos" data-linenos="6 "></span>Coste total: 24.18 €
+</span><span id="__span-12-7"><span class="linenos" data-linenos="7 "></span>Paga cada uno: 6.04 €
+</span></code></pre></div>
+</li>
+<li>
+<p><abbr title="Actividades de clase.">AC</abbr> 211(). Reparto de una pizza (<code>pizza.py</code>). Se piden varias pizzas cortadas en 8 porciones cada una. Pide el número de pizzas y el número de personas. Calcula cuántas porciones enteras toca a cada uno y cuántas sobran.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><span class="linenos" data-linenos="1 "></span>Pizzas: 3
+</span><span id="__span-13-2"><span class="linenos" data-linenos="2 "></span>Personas: 5
+</span><span id="__span-13-3"><span class="linenos" data-linenos="3 "></span>Cada persona come 4 porciones y sobran 4.
+</span></code></pre></div>
+<ul>
+<li>Patrón: es el mismo problema que repartir minutos en horas (<code>//</code> y <code>%</code>). ¡Reconoce el patrón!</li>
+<li>Restricción: ¿qué pasa con 0 personas? Pruébalo y anota el error que aparece.</li>
+</ul>
+</li>
+</ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 
 <!-- Instrumentos de Evaluación -->
