@@ -856,6 +856,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#valores-limite-donde-fallan-los-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valores límite: dónde fallan los programas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#actividades" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1070,11 +1081,21 @@
 </span><span id="__span-5-9"><span class="linenos" data-linenos="9 "></span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Día no válido&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <p><code>case _</code> recoge cualquier otro valor (como <code>default</code> en Java). Comprueba la versión con <code>python3 --version</code>.</p>
+<h2 id="valores-limite-donde-fallan-los-programas">Valores límite: dónde fallan los programas<a class="headerlink" href="#valores-limite-donde-fallan-los-programas" title="Permanent link">&para;</a></h2>
+<p>Si una condición es <code>nota &gt;= 5</code>, los casos más importantes son <strong>4.99</strong>, <strong>5</strong> y <strong>5.01</strong>. Un programa con <code>nota &gt; 5</code> funcionaría bien con 3 y con 8, pero fallaría con exactamente 5.</p>
+<p>Para cada reto, la tabla de casos de prueba debe incluir:</p>
+<ul>
+<li>Un caso <strong>normal</strong> de cada rama (<code>if</code>, cada <code>elif</code>, <code>else</code>).</li>
+<li>Los <strong>valores límite</strong> de cada condición.</li>
+<li>Al menos un caso <strong>no válido</strong> (nota 11, edad negativa…).</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><span class="linenos" data-linenos="1 "></span>| Caso | Entrada | Rama esperada | Salida esperada | Salida obtenida | ¿OK? |
+</span></code></pre></div>
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
 <ul>
 <li><abbr title="Actividades de clase.">AC</abbr> 212(). Par o impar.</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><span class="linenos" data-linenos="1 "></span>INICIO → LEER n → ¿n % 2 == 0? → Sí: MOSTRAR &quot;par&quot; / No: MOSTRAR &quot;impar&quot; → FIN
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><span class="linenos" data-linenos="1 "></span>INICIO → LEER n → ¿n % 2 == 0? → Sí: MOSTRAR &quot;par&quot; / No: MOSTRAR &quot;impar&quot; → FIN
 </span></code></pre></div>
 <ul>
 <li>
@@ -1085,6 +1106,65 @@
 </li>
 <li>
 <p><abbr title="Actividades de clase.">AC</abbr> 215(). Menú de cafetería con `match. Muestra un menú (1. Café, 2. Té, 3. Zumo), pide una opción y muestra el precio. Cualquier otra opción: «Opción no válida».</p>
+</li>
+<li>
+<p><abbr title="Prácticas">PR</abbr> 216. Un parking cobra así: la primera hora es gratis; de la 2.ª a la 4.ª hora, 1,50 € cada hora; a partir de la 5.ª hora, 1 € cada hora. Hay un máximo diario de 12 €. Las fracciones de hora se cobran como hora completa. El programa pide los minutos de estancia y muestra el importe.</p>
+<p>Pistas:</p>
+<ul>
+<li>Descompón: minutos → horas cobrables (redondeando hacia arriba) → importe por tramos → aplicar máximo.</li>
+<li>Para redondear hacia arriba sin librerías: <code>horas = (minutos + 59) // 60</code>.</li>
+<li>Casos límite: 60 min, 61 min, 240 min, 241 min, y una estancia larga que supere el máximo.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Minutos</th>
+<th>Horas cobrables</th>
+<th>Importe esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>45</td>
+<td>1</td>
+<td>0.00 €</td>
+</tr>
+<tr>
+<td>61</td>
+<td>2</td>
+<td>1.50 €</td>
+</tr>
+<tr>
+<td>240</td>
+<td>4</td>
+<td>4.50 €</td>
+</tr>
+<tr>
+<td>300</td>
+<td>5</td>
+<td>5.50 €</td>
+</tr>
+<tr>
+<td>900</td>
+<td>15</td>
+<td>12.00 € (máximo)</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><abbr title="Prácticas">PR</abbr> 217. Un año es bisiesto si es divisible entre 4, excepto los divisibles entre 100, que solo lo son si también son divisibles entre 400.</p>
+<ul>
+<li>Resuélvelo <strong>dos veces</strong>: primero con <code>if</code> anidados y después con <strong>una sola condición</strong> usando <code>and</code>, <code>or</code> y <code>not</code>. Comprueba que las dos versiones dan lo mismo.</li>
+<li>Casos obligatorios: 2024, 2025, 1900, 2000.</li>
+</ul>
+</li>
+<li>
+<p><abbr title="Prácticas">PR</abbr> 218. Pide una nota numérica y muestra su calificación: Insuficiente (0 a menos de 5), Suficiente (5 a menos de 6), Bien (6 a menos de 7), Notable (7 a menos de 9), Sobresaliente (9 a 10). Si la nota no está entre 0 y 10, muestra «Nota no válida».</p>
+<ul>
+<li>Casos límite: 4.99, 5, 5.99, 6, 6.99, 7, 8.99, 9, 10, y -1 y 10.5 como no válidos.</li>
+<li>Pregunta: ¿importa el orden de los <code>elif</code>? Prueba a cambiarlos.</li>
+</ul>
 </li>
 </ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
