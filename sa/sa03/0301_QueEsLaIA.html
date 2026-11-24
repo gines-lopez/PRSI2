@@ -1,0 +1,1646 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/gines-lopez/PRSI2/sa/sa03/0301_QueEsLaIA.html">
+      
+      
+        <link rel="prev" href="ResumenSA.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Qué es la IA - Programación, Redes y Sistemas Informáticos 2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra_index.css">
+    
+      <link rel="stylesheet" href="../../css/extra_pd.css">
+    
+      <link rel="stylesheet" href="../../css/extra_general.css">
+    
+      <link rel="stylesheet" href="../../css/extra_tablasresumen.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#que-es-la-ia-hoy-de-las-reglas-a-los-modelos-de-lenguaje" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../index.html" title="Programación, Redes y Sistemas Informáticos 2" class="md-header__button md-logo" aria-label="Programación, Redes y Sistemas Informáticos 2" data-md-component="logo">
+      
+  <img src="../../img/logofp.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, Redes y Sistemas Informáticos 2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Qué es la IA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="blue"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="blue"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Programación, Redes y Sistemas Informáticos 2" class="md-nav__button md-logo" aria-label="Programación, Redes y Sistemas Informáticos 2" data-md-component="logo">
+      
+  <img src="../../img/logofp.png" alt="logo">
+
+    </a>
+    Programación, Redes y Sistemas Informáticos 2
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SA 01. Administración de Sistemas Informáticos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SA 01. Administración de Sistemas Informáticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/ResumenSA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica SA 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0101_RepresentacionInfo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Representación de la información
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0102_ArquitecturaPC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitectura de un computador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0103_MV.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Máquinas virtuales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0104_Monitorizacion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitorización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa01/0105_ComandosLinux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SA 02. Programación en un lenguaje de alto nivel.
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SA 02. Programación en un lenguaje de alto nivel.
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/ResumenSA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica SA 02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0201_ProblemaAPrograma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Del problema al programa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0202_Analizar.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analizar antes de programar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0203_Variables.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables, tipos, entrada/salida y operadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0204_Condicionales.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decisiones condicionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0205_Repeticion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repetición y depuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0206_BucleFor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bucle for
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0207_CadenaTexto.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadenas de texto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sa02/0208_Listas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SA 03. Internet y los retos del siglo XXI.
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SA 03. Internet y los retos del siglo XXI.
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ResumenSA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica SA 03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qué es la IA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="0301_QueEsLaIA.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qué es la IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-llamamos-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué llamamos inteligencia artificial?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ia-clasica-e-ia-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IA clásica e IA generativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IA clásica e IA generativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ia-basada-en-reglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IA basada en reglas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aprendizaje-automatico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aprendizaje automático
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ia-generativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IA generativa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-modelos-de-lenguaje-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Los modelos de lenguaje (LLM)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-un-llm-por-dentro-sin-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo funciona un LLM por dentro (sin fórmulas)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo funciona un LLM por dentro (sin fórmulas)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datos-el-texto-se-convierte-en-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datos: el texto se convierte en tokens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrenamiento-aprender-a-continuar-textos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrenamiento: aprender a continuar textos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prediccion-un-token-detras-de-otro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Predicción: un token detrás de otro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lo-que-el-funcionamiento-explica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que el funcionamiento explica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lo que el funcionamiento explica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#un-ejemplo-para-probar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Un ejemplo para probar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividades
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="que-es-la-ia-hoy-de-las-reglas-a-los-modelos-de-lenguaje">Qué es la IA hoy: de las reglas a los modelos de lenguaje<a class="headerlink" href="#que-es-la-ia-hoy-de-las-reglas-a-los-modelos-de-lenguaje" title="Permanent link">&para;</a></h1>
+<h2 id="que-llamamos-inteligencia-artificial">¿Qué llamamos inteligencia artificial?<a class="headerlink" href="#que-llamamos-inteligencia-artificial" title="Permanent link">&para;</a></h2>
+<p>La <strong>inteligencia artificial (IA)</strong> es la parte de la informática que crea sistemas capaces de hacer tareas que, hasta hace poco, solo hacíamos las personas: reconocer una cara, traducir un texto, recomendar una canción o escribir un correo.</p>
+<p>Ojo con la palabra <em>inteligencia</em>. Toda la IA que existe hoy es <strong>IA específica</strong>: hace muy bien una tarea (o una familia de tareas) y nada más. La IA "general", la que razona como una persona en cualquier situación, de momento solo está en las películas y en los debates.</p>
+<p>Tres ideas para empezar:</p>
+<ul>
+<li><strong>La IA no es nueva.</strong> El término se acuñó en 1956. Lo nuevo es que hoy cabe en tu móvil.</li>
+<li><strong>La IA no es una sola cosa.</strong> Bajo la misma etiqueta conviven técnicas muy distintas.</li>
+<li><strong>La IA trabaja con datos.</strong> Sin datos no hay reglas que aprender ni texto que imitar.</li>
+</ul>
+<h2 id="ia-clasica-e-ia-generativa">IA clásica e IA generativa<a class="headerlink" href="#ia-clasica-e-ia-generativa" title="Permanent link">&para;</a></h2>
+<p>Para entender la IA de hoy conviene ver cómo ha cambiado. Hay tres grandes enfoques.</p>
+<h3 id="ia-basada-en-reglas">IA basada en reglas<a class="headerlink" href="#ia-basada-en-reglas" title="Permanent link">&para;</a></h3>
+<p>Es la IA "de toda la vida". Una persona experta escribe las reglas y el programa las aplica. Si conoces <code>if</code>, ya sabes hacer IA clásica:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos="1 "></span>def es_spam(asunto):
+</span><span id="__span-0-2"><span class="linenos" data-linenos="2 "></span>    palabras_sospechosas = [&quot;gratis&quot;, &quot;premio&quot;, &quot;urgente&quot;]
+</span><span id="__span-0-3"><span class="linenos" data-linenos="3 "></span>    for palabra in palabras_sospechosas:
+</span><span id="__span-0-4"><span class="linenos" data-linenos="4 "></span>        if palabra in asunto.lower():
+</span><span id="__span-0-5"><span class="linenos" data-linenos="5 "></span>            return True
+</span><span id="__span-0-6"><span class="linenos" data-linenos="6 "></span>    return False
+</span><span id="__span-0-7"><span class="linenos" data-linenos="7 "></span>
+</span><span id="__span-0-8"><span class="linenos" data-linenos="8 "></span>print(es_spam(&quot;¡Has ganado un PREMIO!&quot;))    # True
+</span><span id="__span-0-9"><span class="linenos" data-linenos="9 "></span>print(es_spam(&quot;Entrega de la práctica 3&quot;))  # False
+</span></code></pre></div>
+<ul>
+<li>Las reglas las decide <strong>una persona</strong>: el programa no aprende nada.</li>
+<li>Es <strong>predecible y explicable</strong>: sabes exactamente por qué marca algo como spam.</li>
+<li>Es <strong>frágil</strong>: "¡Has ganado un pr3mio!" se cuela sin problema. Cada truco nuevo obliga a escribir otra regla.</li>
+</ul>
+<h3 id="aprendizaje-automatico">Aprendizaje automático<a class="headerlink" href="#aprendizaje-automatico" title="Permanent link">&para;</a></h3>
+<p>En lugar de escribir las reglas, le das al programa <strong>miles de ejemplos etiquetados</strong> ("esto es spam", "esto no") y él encuentra los patrones. El resultado es un <strong>modelo</strong> que clasifica o predice casos nuevos. Así funcionan el filtro de spam de tu correo, el desbloqueo facial o las recomendaciones de una plataforma de series.</p>
+<h3 id="ia-generativa">IA generativa<a class="headerlink" href="#ia-generativa" title="Permanent link">&para;</a></h3>
+<p>Da un paso más: no se limita a clasificar, sino que <strong>crea contenido nuevo</strong> (texto, imágenes, audio, vídeo o código) a partir de lo que ha aprendido. Es la que ha explotado desde finales de 2022 con los chatbots.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>IA basada en reglas</th>
+<th>Aprendizaje automático</th>
+<th>IA generativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quién pone el conocimiento</strong></td>
+<td>Una persona escribe las reglas</td>
+<td>El modelo aprende de ejemplos</td>
+<td>El modelo aprende de cantidades enormes de datos</td>
+</tr>
+<tr>
+<td><strong>Qué hace</strong></td>
+<td>Aplica reglas fijas</td>
+<td>Clasifica o predice</td>
+<td>Genera contenido nuevo</td>
+</tr>
+<tr>
+<td><strong>Ejemplo</strong></td>
+<td>Un <code>if</code> que detecta palabras de spam</td>
+<td>Filtro de spam de tu correo</td>
+<td>Un chatbot que redacta el correo</td>
+</tr>
+<tr>
+<td><strong>¿Explica sus decisiones?</strong></td>
+<td>Sí, siempre</td>
+<td>A veces, con esfuerzo</td>
+<td>Casi nunca</td>
+</tr>
+<tr>
+<td><strong>Punto débil</strong></td>
+<td>No se adapta a lo nuevo</td>
+<td>Depende de la calidad de los ejemplos</td>
+<td>Se inventa cosas con total seguridad</td>
+</tr>
+</tbody>
+</table>
+<h2 id="los-modelos-de-lenguaje-llm">Los modelos de lenguaje (LLM)<a class="headerlink" href="#los-modelos-de-lenguaje-llm" title="Permanent link">&para;</a></h2>
+<p>Un <strong>LLM</strong> (<em>Large Language Model</em>, modelo de lenguaje grande) es un tipo de IA generativa especializada en texto. Es el motor que hay detrás de ChatGPT, Gemini, Claude, Copilot o Le Chat.</p>
+<p>Distingue dos cosas que solemos mezclar:</p>
+<ul>
+<li><strong>El modelo</strong>: el "cerebro" entrenado, un fichero enorme de números.</li>
+<li><strong>El producto</strong>: la aplicación con la que hablas (web, app, asistente del móvil). Un mismo producto puede cambiar de modelo, y un mismo modelo puede estar en varios productos.</li>
+</ul>
+<p>¿Por qué "grande"? Por dos motivos: se entrenan con <strong>muchísimo texto</strong> (una parte importante de lo que hay publicado en internet, libros y código) y tienen <strong>miles de millones de parámetros</strong>, los números que el modelo ajusta mientras aprende.</p>
+<p>Algunos modelos son <strong>cerrados</strong> (solo puedes usarlos a través del servicio de la empresa) y otros son de <strong>pesos abiertos</strong> (cualquiera puede descargarlos y ejecutarlos en su propio ordenador, como Llama o algunos modelos de Mistral). Esta diferencia importa para la privacidad y la volveremos a ver en la sesión 6.</p>
+<h2 id="como-funciona-un-llm-por-dentro-sin-formulas">Cómo funciona un LLM por dentro (sin fórmulas)<a class="headerlink" href="#como-funciona-un-llm-por-dentro-sin-formulas" title="Permanent link">&para;</a></h2>
+<p>Todo se resume en tres ingredientes: <strong>datos</strong>, <strong>entrenamiento</strong> y <strong>predicción</strong>.</p>
+<h3 id="datos-el-texto-se-convierte-en-tokens">Datos: el texto se convierte en tokens<a class="headerlink" href="#datos-el-texto-se-convierte-en-tokens" title="Permanent link">&para;</a></h3>
+<p>Un LLM no lee letras ni palabras: lee <strong>tokens</strong>. Un token es un trozo de texto: una palabra corta, una parte de una palabra larga, un signo de puntuación o un espacio. Cada token se traduce a un número, porque el ordenador solo trabaja con números.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><span class="linenos" data-linenos="1 "></span>Texto:   &quot;Programación en Python&quot;
+</span><span id="__span-1-2"><span class="linenos" data-linenos="2 "></span>Tokens:  &quot;Program&quot; | &quot;ación&quot; | &quot; en&quot; | &quot; Python&quot;
+</span><span id="__span-1-3"><span class="linenos" data-linenos="3 "></span>IDs:      [ 61432,    9314,   306,   13173 ]   ← números inventados
+</span></code></pre></div>
+<ul>
+<li>Las palabras frecuentes suelen ser <strong>un solo token</strong>; las raras se trocean en varios.</li>
+<li>El espacio forma parte del token: <code>" en"</code> y <code>"en"</code> son tokens distintos.</li>
+<li>El español y otros idiomas suelen gastar <strong>más tokens</strong> que el inglés para decir lo mismo, porque el modelo ha visto más texto en inglés. Lo comprobarás en la <abbr title="Actividades de clase.">AC</abbr> 302.</li>
+</ul>
+<h3 id="entrenamiento-aprender-a-continuar-textos">Entrenamiento: aprender a continuar textos<a class="headerlink" href="#entrenamiento-aprender-a-continuar-textos" title="Permanent link">&para;</a></h3>
+<p>El entrenamiento tiene dos grandes fases:</p>
+<ol>
+<li><strong>Preentrenamiento.</strong> Se le enseñan billones de tokens con un juego muy simple: tapar la siguiente palabra y adivinarla. Cada vez que falla, se ajustan un poco sus parámetros. Repetido miles de millones de veces, el modelo acaba captando gramática, datos, estilos e incluso patrones de razonamiento.</li>
+<li><strong>Ajuste fino.</strong> Personas reales valoran respuestas del modelo ("esta es útil", "esta es peligrosa") y el modelo se corrige para comportarse como un asistente: responder preguntas, seguir instrucciones y negarse a ciertas cosas.</li>
+</ol>
+<p>Entrenar un modelo grande cuesta meses de cálculo en miles de procesadores especializados, mucha energía y mucho dinero. Usarlo después es mucho más barato, pero no gratis (lo veremos en la sesión 9).</p>
+<h3 id="prediccion-un-token-detras-de-otro">Predicción: un token detrás de otro<a class="headerlink" href="#prediccion-un-token-detras-de-otro" title="Permanent link">&para;</a></h3>
+<p>Cuando le escribes, el modelo hace siempre lo mismo: calcula qué token es más probable que venga después, elige uno, lo añade al texto y vuelve a empezar.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><span class="linenos" data-linenos=" 1 "></span>Entrada:   &quot;En LliureX, para abrir una terminal pulso&quot;
+</span><span id="__span-2-2"><span class="linenos" data-linenos=" 2 "></span>
+</span><span id="__span-2-3"><span class="linenos" data-linenos=" 3 "></span>Candidatos para el siguiente token (probabilidades inventadas):
+</span><span id="__span-2-4"><span class="linenos" data-linenos=" 4 "></span>   &quot; Ctrl&quot;   0,62
+</span><span id="__span-2-5"><span class="linenos" data-linenos=" 5 "></span>   &quot; el&quot;     0,14
+</span><span id="__span-2-6"><span class="linenos" data-linenos=" 6 "></span>   &quot; la&quot;     0,09
+</span><span id="__span-2-7"><span class="linenos" data-linenos=" 7 "></span>   &quot; Alt&quot;    0,05
+</span><span id="__span-2-8"><span class="linenos" data-linenos=" 8 "></span>   ...
+</span><span id="__span-2-9"><span class="linenos" data-linenos=" 9 "></span>
+</span><span id="__span-2-10"><span class="linenos" data-linenos="10 "></span>Elegido:   &quot; Ctrl&quot;
+</span><span id="__span-2-11"><span class="linenos" data-linenos="11 "></span>Nueva entrada: &quot;En LliureX, para abrir una terminal pulso Ctrl&quot;
+</span><span id="__span-2-12"><span class="linenos" data-linenos="12 "></span>→ y repite hasta terminar la respuesta
+</span></code></pre></div>
+<ul>
+<li>El modelo <strong>no busca</strong> la respuesta en una base de datos: la <strong>construye</strong> token a token.</li>
+<li>No siempre elige el más probable. Un parámetro llamado <strong>temperatura</strong> añade algo de azar: por eso la misma pregunta da respuestas distintas.</li>
+<li>Todo lo que hay en la conversación (tus mensajes y sus respuestas) es su <strong>contexto</strong>. Lo que no cabe en esa "ventana de contexto", lo olvida.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Qué ocurre</th>
+<th>Cuándo</th>
+<th>Analogía</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Datos</strong></td>
+<td>Se recopila y limpia texto, y se convierte en tokens</td>
+<td>Antes de entrenar</td>
+<td>Llenar la biblioteca</td>
+</tr>
+<tr>
+<td><strong>Entrenamiento</strong></td>
+<td>El modelo ajusta sus parámetros adivinando el siguiente token y recibe valoraciones humanas</td>
+<td>Una vez, durante meses</td>
+<td>Leerse la biblioteca entera y hacer prácticas</td>
+</tr>
+<tr>
+<td><strong>Uso (inferencia)</strong></td>
+<td>Predice tu respuesta token a token</td>
+<td>Cada vez que le escribes</td>
+<td>Contestar en un examen oral sin apuntes</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Un autocompletar con esteroides</p>
+<p>Un LLM no "sabe" cosas como las sabes tú: predice qué texto suena más probable. Casi siempre lo probable coincide con lo cierto, y por eso parece que sabe. Cuando no coincide, se inventa la respuesta con la misma seguridad. Fíate de él como de un compañero muy leído y muy convincente, no como de un libro de texto.</p>
+</div>
+<blockquote>
+<p><strong>Pregunta para pensar:</strong> si un LLM solo predice el siguiente token, ¿cómo es posible que resuelva un ejercicio de Python que nunca ha visto?</p>
+</blockquote>
+<hr />
+<h2 id="lo-que-el-funcionamiento-explica">Lo que el funcionamiento explica<a class="headerlink" href="#lo-que-el-funcionamiento-explica" title="Permanent link">&para;</a></h2>
+<p>Saber cómo funciona por dentro te ayuda a entender sus manías. Casi todo lo que te ha sorprendido alguna vez de un chatbot tiene explicación en lo anterior.</p>
+<table>
+<thead>
+<tr>
+<th>Lo que observas</th>
+<th>Por qué ocurre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Se inventa datos, citas o enlaces</td>
+<td>Genera texto probable, no comprueba si es verdad (<strong>alucinación</strong>, sesión 3)</td>
+</tr>
+<tr>
+<td>No conoce noticias recientes</td>
+<td>Su entrenamiento termina en una <strong>fecha de corte</strong>; solo sabe lo posterior si busca en internet</td>
+</tr>
+<tr>
+<td>La misma pregunta da respuestas distintas</td>
+<td>La <strong>temperatura</strong> introduce azar en la elección de tokens</td>
+</tr>
+<tr>
+<td>Falla al contar letras de una palabra</td>
+<td>No ve letras, ve <strong>tokens</strong></td>
+</tr>
+<tr>
+<td>En una conversación muy larga "olvida" lo del principio</td>
+<td>Se supera su <strong>ventana de contexto</strong></td>
+</tr>
+<tr>
+<td>Responde mejor si le das contexto y ejemplos</td>
+<td>Más contexto cambia las probabilidades de los tokens (sesión 2)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="un-ejemplo-para-probar">Un ejemplo para probar<a class="headerlink" href="#un-ejemplo-para-probar" title="Permanent link">&para;</a></h3>
+<p>Abre <a href="https://duck.ai">Duck.ai</a> (no pide cuenta) y prueba este prompt:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><span class="linenos" data-linenos="1 "></span>Prompt:
+</span><span id="__span-3-2"><span class="linenos" data-linenos="2 "></span>Eres profesor de informática. Explícame qué es un token en un modelo
+</span><span id="__span-3-3"><span class="linenos" data-linenos="3 "></span>de lenguaje en tres frases, con un ejemplo en español.
+</span><span id="__span-3-4"><span class="linenos" data-linenos="4 "></span>
+</span><span id="__span-3-5"><span class="linenos" data-linenos="5 "></span>Respuesta de ejemplo:
+</span><span id="__span-3-6"><span class="linenos" data-linenos="6 "></span>Un token es un trozo de texto que el modelo trata como una unidad.
+</span><span id="__span-3-7"><span class="linenos" data-linenos="7 "></span>Puede ser una palabra entera, una parte de ella o un signo de puntuación.
+</span><span id="__span-3-8"><span class="linenos" data-linenos="8 "></span>Por ejemplo, &quot;inteligencia&quot; podría dividirse en &quot;intel&quot; e &quot;igencia&quot;.
+</span></code></pre></div>
+<ul>
+<li>El prompt fija un <strong>rol</strong> ("eres profesor") y un <strong>formato</strong> ("tres frases"): el modelo los respeta porque cambian lo que es probable escribir.</li>
+<li>La división de "inteligencia" que propone <strong>puede no ser real</strong>: el modelo no ve sus propios tokens, así que se lo ha imaginado. Compruébalo con el tokenizador de la <abbr title="Actividades de clase.">AC</abbr> 302.</li>
+<li>Pulsa <strong>regenerar</strong> y verás otra respuesta distinta. Eso es la temperatura.</li>
+</ul>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 301. Radiografía de mi IA.</strong> Vamos a poner en común cómo usáis la IA de verdad, sin postureo.</p>
+<ol>
+<li>
+<p>Copia esta tabla en un documento de LibreOffice Writer y rellénala con <strong>todas</strong> las herramientas con IA que has usado este mes (chatbots, traductores, filtros de fotos, asistentes del móvil, recomendaciones...):</p>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Para qué la uso</th>
+<th>Frecuencia</th>
+<th>¿Me fío? (1-5)</th>
+<th>¿Es clásica o generativa?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Marca con un asterisco el uso del que más te alegras y el que menos te gustaría que viera tu profesor.</p>
+</li>
+<li>Compara tu tabla con la de tu compañero o compañera. Anotad dos cosas en común y una diferencia.</li>
+<li><strong>No incluyas</strong> nombres de usuario, conversaciones ni datos personales: solo herramientas y usos.
+- <strong>Entrega en Aules:</strong> el documento en PDF con la tabla y las tres anotaciones comunes.<blockquote>
+<p><strong>Reflexión:</strong> ¿hay alguna tarea que ya no sabrías hacer sin IA? ¿Te preocupa?</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 302. Trocea la frase.</strong> Comprueba con tus propios ojos qué ve un LLM.</p>
+<ol>
+<li>Abre el <a href="https://platform.openai.com/tokenizer">Tokenizer de OpenAI</a> en el navegador (no hace falta iniciar sesión).</li>
+<li>Pega, una a una, estas cuatro entradas y anota el número de <strong>caracteres</strong> y de <strong>tokens</strong>:<ul>
+<li><code>La inteligencia artificial cambia la forma de programar.</code></li>
+<li><code>Artificial intelligence changes the way we program.</code></li>
+<li><code>for i in range(10): print(i)</code></li>
+<li><code>Supercalifragilisticoespialidoso</code></li>
+</ul>
+</li>
+<li>Pega una frase propia con una palabra muy rara o inventada y observa cómo la trocea.</li>
+<li>Comprueba si la división de "inteligencia" que te dio Duck.ai en el ejemplo era real.
+- <strong>Entrega en Aules:</strong> una tabla con las cuatro entradas (caracteres, tokens y relación tokens/caracteres) y dos conclusiones de una línea cada una.</li>
+</ol>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 303. Regenera y compara.</strong> Juega a ser un LLM y después compárate con uno.</p>
+<ol>
+<li>Escribe en papel la continuación más probable de esta frase, palabra a palabra, hasta completar 10 palabras: <em>"Los estudiantes de bachillerato usan la inteligencia artificial para..."</em></li>
+<li>Abre <a href="https://duck.ai">Duck.ai</a> y pide: <code>Continúa esta frase con exactamente 10 palabras más: "Los estudiantes de bachillerato usan la inteligencia artificial para..."</code></li>
+<li>Regenera la respuesta <strong>tres veces</strong> y copia las tres versiones.</li>
+<li>Compara: ¿en qué se parecen las tres? ¿Alguna coincide con la tuya? ¿Qué palabras aparecen siempre?
+- <strong>Entrega en Aules:</strong> tu versión, las tres de la IA y un párrafo que explique las diferencias usando las palabras <em>probabilidad</em>, <em>token</em> y <em>temperatura</em>.<blockquote>
+<p><strong>Reflexión:</strong> si las tres respuestas hablan de "hacer los deberes", ¿qué te dice eso sobre los datos con los que se entrenó el modelo?</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p><strong><abbr title="Actividades de profundización.">AP</abbr> 304. Tu propio minimodelo de lenguaje.</strong> Programa en Python el antepasado de un LLM: un modelo que predice la siguiente palabra según la anterior.</p>
+<ol>
+<li>
+<p>Copia este código en Thonny y ejecútalo varias veces:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><span class="linenos" data-linenos=" 1 "></span>import random
+</span><span id="__span-4-2"><span class="linenos" data-linenos=" 2 "></span>from collections import defaultdict
+</span><span id="__span-4-3"><span class="linenos" data-linenos=" 3 "></span>
+</span><span id="__span-4-4"><span class="linenos" data-linenos=" 4 "></span>texto = &quot;&quot;&quot;el gato come pescado . el perro come carne .
+</span><span id="__span-4-5"><span class="linenos" data-linenos=" 5 "></span>el gato duerme en el sofá . el perro duerme en la calle .&quot;&quot;&quot;
+</span><span id="__span-4-6"><span class="linenos" data-linenos=" 6 "></span>
+</span><span id="__span-4-7"><span class="linenos" data-linenos=" 7 "></span>palabras = texto.split()
+</span><span id="__span-4-8"><span class="linenos" data-linenos=" 8 "></span>siguientes = defaultdict(list)
+</span><span id="__span-4-9"><span class="linenos" data-linenos=" 9 "></span>for actual, siguiente in zip(palabras, palabras[1:]):
+</span><span id="__span-4-10"><span class="linenos" data-linenos="10 "></span>    siguientes[actual].append(siguiente)
+</span><span id="__span-4-11"><span class="linenos" data-linenos="11 "></span>
+</span><span id="__span-4-12"><span class="linenos" data-linenos="12 "></span>palabra = &quot;el&quot;
+</span><span id="__span-4-13"><span class="linenos" data-linenos="13 "></span>frase = [palabra]
+</span><span id="__span-4-14"><span class="linenos" data-linenos="14 "></span>for _ in range(10):
+</span><span id="__span-4-15"><span class="linenos" data-linenos="15 "></span>    opciones = siguientes.get(palabra)
+</span><span id="__span-4-16"><span class="linenos" data-linenos="16 "></span>    if not opciones:
+</span><span id="__span-4-17"><span class="linenos" data-linenos="17 "></span>        break
+</span><span id="__span-4-18"><span class="linenos" data-linenos="18 "></span>    palabra = random.choice(opciones)
+</span><span id="__span-4-19"><span class="linenos" data-linenos="19 "></span>    frase.append(palabra)
+</span><span id="__span-4-20"><span class="linenos" data-linenos="20 "></span>
+</span><span id="__span-4-21"><span class="linenos" data-linenos="21 "></span>print(&quot; &quot;.join(frase))
+</span></code></pre></div>
+</li>
+<li>
+<p>Explica con comentarios <code>#</code> qué hace cada bloque. Pista: imprime <code>siguientes</code> para ver qué ha "aprendido".</p>
+</li>
+<li>Sustituye <code>texto</code> por un texto más largo y sin datos personales (por ejemplo, un fragmento de Wikipedia o del Quijote) y observa cómo cambian las frases.</li>
+<li><strong>Reto:</strong> haz que el modelo mire las <strong>dos</strong> palabras anteriores en lugar de una. ¿Mejoran las frases? ¿Qué pasa si el texto de entrenamiento es corto?
+- <strong>Entrega en Aules:</strong> el fichero <code>.py</code> comentado y un párrafo que compare tu minimodelo con un LLM real (qué tienen en común y qué le falta al tuyo).</li>
+</ol>
+</li>
+</ul>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="ResumenSA.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Propuesta didáctica SA 03">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Propuesta didáctica SA 03
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ginés López García
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/gineslopez/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gines-lopez" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://gines-lopez.github.io" target="_blank" rel="noopener" title="gines-lopez.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ginesenclase" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<g.lopezgarcia2@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
